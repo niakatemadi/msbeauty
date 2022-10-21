@@ -74,6 +74,7 @@ export default {
 .componentCarousel {
   display: flex;
   justify-content: center;
+  background-color: rgb(192, 192, 192);
 }
 .carousel-inner {
   position: relative;

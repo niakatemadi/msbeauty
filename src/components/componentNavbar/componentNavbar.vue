@@ -41,6 +41,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Shalimar&family=Space+Grotesk&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@600&family=Shalimar&family=Space+Grotesk&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@600&family=Didact+Gothic&family=Shalimar&family=Space+Grotesk&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
   header 
 {
     top: 0px;
@@ -56,7 +57,7 @@
 
 }
 mark{
-    font-family: 'Shalimar', cursive;
+    font-family: 'Playfair Display', serif;
     background-color: rgba(187, 34, 179,0);
     color:rgba(187, 34, 179,1);
     text-decoration: overline;
@@ -84,7 +85,7 @@ ul.list_header_navbar
     width: 30rem;
     list-style: none;
     font-size: 1.1em;
-    color:rgba(187, 34, 179,1);
+    color:rgb(0, 0, 0)!important;
 }
 .togglebutton 
 {
@@ -106,16 +107,19 @@ ul.list_header_navbar li:hover
 a.page_accueil
 {
     text-decoration: none;
-    color:rgba(187, 34, 179,1)!important ;
+    color:rgba(187, 34, 179,1) ;
+    font-family: 'Playfair Display', serif;
 }
 li a.page_veille
 {
     color:rgba(187, 34, 179,1)!important ;
     text-decoration: none !important;
+    font-family: 'Playfair Display', serif;
 }
 a.page_bts 
 {
     text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
 }
 ul.list_header_navbar li.social_liste:hover 
 {
