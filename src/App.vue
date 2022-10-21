@@ -15,10 +15,10 @@
     <p>Qu’attendez-vous alors pour réserver des instants uniques de beauté chez Beauty MS !</p>
     </section>
   </div>
-  <HelloWorld msg="Nos locaux :"/>
+  <HelloWorld msg="Nos locaux"/>
   <Carousel :slides="slides"/>
   <footer class="coordonnees">
-    <h1>Nos coordonnées :</h1>
+    <h1>Nos coordonnées </h1>
     <section>
       <div class="adresse"><img src="./assets/emplacement.png"  alt="icone localisation"/> <p>85 Route d'Eragny à Bessancourt</p><p>95220 Pierrelaye</p></div>
       <div class="telephone"><img src="./assets/telephone-portable.png"  alt="icone telephone"/> <p>Appelez-nous au :</p><p>07 xx xx xx xx</p></div>
@@ -118,7 +118,6 @@ footer.coordonnees{
 }
 footer.coordonnees h1 {
   color: rgba(187,34,179);
-  text-decoration: underline;
   font-family: 'Playfair Display', serif;
 }
 footer.coordonnees section {
@@ -132,5 +131,6 @@ footer.coordonnees div {
   height:100px;
   font-weight: 400;
   color:white;
+  font-family: 'Playfair Display', serif;
 }
 </style>

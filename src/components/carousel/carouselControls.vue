@@ -1,7 +1,7 @@
 <template>
   <div class="Bloc_carouselControl">
-    <button class="carousel-control left" @click="prevItem">Prev</button>
-    <button class="carousel-control right" @click="nextItem">Next</button>
+    <button class="carousel-control left" @click="prevItem"><img src="../../assets/left-arrow2.png"/></button>
+    <button class="carousel-control right" @click="nextItem"><img src="../../assets/right-arrow2.png"/></button>
   </div>
 </template>
 
@@ -39,9 +39,11 @@ export default {
 .carousel-control {
   height: 50px;
   width: 70px;
-  background-color: rgba(187, 34, 179,0.6);
+  background-color: rgba(187, 34, 179,0);
+  outline: none;
+  background: transparent;
+  border: 1px solid transparent;
   color: white;
-  border:2px solid purple;
 }
 .carousel-control:hover {
   cursor: pointer;

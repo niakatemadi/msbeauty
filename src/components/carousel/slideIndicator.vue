@@ -38,7 +38,7 @@ ul {
 li {
   background-color: white;
   width: 20px;
-  height: 5px;
+  height: 2px;
 }
 .indicatorcolor {
   background-color: rgba(187, 34, 179,0.7);

@@ -18,7 +18,6 @@ export default {
 
 h1{
   color:rgba(187, 34, 179,1);
-  text-decoration: underline;
   font-family: 'Playfair Display', serif;
 }
 h3 {
