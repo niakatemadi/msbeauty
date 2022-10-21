@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../my-first-vue-app"
+		},
+		{
+			"path": "../../MonPortfolio"
+		}
+	],
+	"settings": {}
+}
