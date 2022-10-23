@@ -1,6 +1,6 @@
 <template>
-  <div class="componentCarousel">
-    <div class="carousel-inner">
+  <div class="Carousel">
+    <div class="Carousel-inner">
       <carouselItem
         v-for="(slide, index) in slides"
         :key="`item-${index}`"
@@ -71,12 +71,12 @@ export default {
 };
 </script>
 <style scoped>
-.componentCarousel {
+.Carousel {
   display: flex;
   justify-content: center;
   background-color: rgb(192, 192, 192);
 }
-.carousel-inner {
+.Carousel-inner {
   position: relative;
   width: 640px;
   height: 426px;

@@ -1,18 +1,18 @@
 <template>
-    <header>
-        <nav class="navbarisopen" :class="displayNav ? 'yes' : ''">
-          <div class="bloc_myname">
-            <h1><mark>BEAUTY MS</mark></h1>
+    <header class="Header">
+        <nav class="Header-navbar" :class="displayNav ? 'yes' : ''">
+          <div>
+            <h1 class="Header-title">BEAUTY MS</h1>
           </div>
-          <div class="togglebutton" @click="displaynav">
+          <div class="Header-toggleButton" @click="displaynav">
             <span class="bar1"></span>
             <span class="bar2"></span>
             <span class="bar3"></span>
           </div>
-          <ul class="list_header_navbar">
-            <li><a class="page_accueil" href="../index.html#ancre_top_accueil">Accueil</a></li>
-            <li><a class="page_veille" href="../pageVeilleTechnologique/veille.html">Prestations</a></li>
-            <li class="social_liste"> <a href="https://www.instagram.com/beauty.ms_95/?hl=fr" target="_blank"><img src="../../assets/instagram1.png"  alt="Logo instagram"/></a></li>
+          <ul class="Header-blocNavigation">
+            <li><a>Accueil</a></li>
+            <li><a>Prestations</a></li>
+            <li class="Header-instagramButton"> <a href="https://www.instagram.com/beauty.ms_95/?hl=fr" target="_blank"><img src="../../assets/instagram1.png"  alt="Logo instagram"/></a></li>
           </ul>
         </nav>
       </header>
@@ -36,13 +36,8 @@
   };
   </script>
   <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Shalimar&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Shalimar&family=Space+Grotesk&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@600&family=Shalimar&family=Space+Grotesk&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@600&family=Didact+Gothic&family=Shalimar&family=Space+Grotesk&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
-  header 
+
+.Header 
 {
     top: 0px;
     left: 0px;
@@ -54,15 +49,10 @@
     position: fixed;
     z-index: 99;
     font-weight: bold;
+    font-family: 'Playfair Display', serif;
 
 }
-mark{
-    font-family: 'Playfair Display', serif;
-    background-color: rgba(187, 34, 179,0);
-    color:rgba(187, 34, 179,1);
-    text-decoration: overline;
-}
-nav 
+.Header-navbar 
 {
     display: flex;
     flex-direction: row;
@@ -72,11 +62,14 @@ nav
     width: 100%;
     border-bottom: 1px solid rgba(187, 34, 179,1);
 }
-div.bloc_myname h1 
+
+.Header-title
 {
     font-size: 2.5em;
+    background-color: rgba(187, 34, 179,0);
+    text-decoration: overline;
 }
-ul.list_header_navbar 
+.Header-blocNavigation
 {
     display: flex;
     flex-direction: row;
@@ -87,48 +80,42 @@ ul.list_header_navbar
     font-size: 1.1em;
     color:rgb(0, 0, 0)!important;
 }
-.togglebutton 
+.Header-toggleButton
 {
     display: none;
     width:40px;
     height:40px;
 }
-.togglebutton:hover 
+.Header-toggleButton:hover 
 {
     cursor: pointer;
 }
-ul.list_header_navbar li:hover 
+.Header-blocNavigation li:hover 
 {
     cursor: pointer;
     transform: scale(1.05);
     text-decoration: underline;
-    transition: 0.6s;
+    transition: 0.3s;
 }
-a.page_accueil
+.Header-blocNavigation a
 {
     text-decoration: none;
-    color:rgba(187, 34, 179,1) ;
-    font-family: 'Playfair Display', serif;
+    color : rgba(187, 34, 179,1);
 }
-li a.page_veille
+.Header-instagramButton:hover
 {
-    color:rgba(187, 34, 179,1)!important ;
-    text-decoration: none !important;
-    font-family: 'Playfair Display', serif;
-}
-a.page_bts 
-{
-    text-decoration: underline;
-    font-family: 'Roboto', sans-serif;
-}
-ul.list_header_navbar li.social_liste:hover 
-{
-    opacity: 0.6;
+    opacity: 0.8;
     transform: scale(1);
 }
 
 @media screen and (max-width : 768px){
-    .togglebutton 
+    .Header-title
+    {
+        display: block;
+        position: relative;
+        z-index: 30;
+    }
+    .Header-toggleButton 
     {
         display: flex;
         flex-direction: column;
@@ -158,59 +145,34 @@ ul.list_header_navbar li.social_liste:hover
     .yes .bar3 {
         display: none;
     }
-    .bloc_myname 
-    {
-        display: block;
-        position: relative;
-        z-index: 30;
-    }
-    .navbarisopen .open 
-    {
-        display: block;
-    }
-    .navbarisopen .close 
-    {
-        display: none;
-    }
-
-    .navbarisopen.yes .open 
-    {
-        display: none;
-    }
-    .navbarisopen.yes .close 
-    {
-        display: block;
-    }
-    ul.list_header_navbar 
-    {
-        position: absolute;
-        top: 37px;
-        left: 0px;
-        width: 100%;
-        height: 100vh;
-        background-color: rgb(187, 34, 179);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transform: translateX(-100%);
-        transition: 1s;
-        padding-left: 0;
-    }
-    ul.list_header_navbar li 
-    {
-        margin-top: 1em;
-    }
-    .yes ul.list_header_navbar 
+    .yes .Header-blocNavigation
     {
         transform: translateX(0%);
     }
-}
-
-@media screen and (max-width:570px)
-{
-    section.introduction_bts_sio 
+    .Header-blocNavigation
     {
-        padding: 0 3rem;
+        position: absolute;
+        top: 58px;
+        left: 0px;
+        width: 90%;
+        height: 72vh;
+        background-color: rgb(187, 34, 179);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: 0.3s ease-in;
+        padding-left: 0;
+    }
+    .Header-blocNavigation a
+    {
+        text-decoration: none;
+        color : white;
+    }
+    .Header-blocNavigation li
+    {
+        text-decoration: none;
+        transform : scale(1.5);
     }
 }
   </style>

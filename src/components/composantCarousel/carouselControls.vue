@@ -1,7 +1,7 @@
 <template>
-  <div class="Bloc_carouselControl">
-    <button class="carousel-control left" @click="prevItem"><img src="../../assets/left-arrow2.png"/></button>
-    <button class="carousel-control right" @click="nextItem"><img src="../../assets/right-arrow2.png"/></button>
+  <div class="CarouselControl">
+    <button class="CarouselControl-button left" @click="prevItem"><img src="../../assets/left-arrow2.png"/></button>
+    <button class="CarouselControl-button right" @click="nextItem"><img src="../../assets/right-arrow2.png"/></button>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style>
-.Bloc_carouselControl {
+.CarouselControl {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -36,7 +36,7 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-.carousel-control {
+.CarouselControl-button {
   height: 50px;
   width: 70px;
   background-color: rgba(187, 34, 179,0);
@@ -45,7 +45,7 @@ export default {
   border: 1px solid transparent;
   color: white;
 }
-.carousel-control:hover {
+.CarouselControl-button:hover {
   cursor: pointer;
 }
 </style>
