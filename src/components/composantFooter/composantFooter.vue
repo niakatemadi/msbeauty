@@ -3,7 +3,7 @@
     <h1 class="Footer-title">Nos coordonnées </h1>
     <section>
       <div><img src="../../assets/emplacement.png"  alt="icone localisation"/> <p>85 Route d'Eragny à Bessancourt</p><p>95220 Pierrelaye</p></div>
-      <div><img src="../../assets/telephone-portable.png"  alt="icone telephone"/> <p>Appelez-nous au :</p><p>07 xx xx xx xx</p></div>
+      <div><img src="../../assets/telephone-portable.png"  alt="icone telephone"/> <p>Appelez-nous au :</p><p>07 66 22 04 25</p></div>
       <div><img src="../../assets/email.png"  alt="icone email"/><p>Contactez-nous par email :</p><p>xxxx@gmail.com</p></div>
     </section>
   </footer>
