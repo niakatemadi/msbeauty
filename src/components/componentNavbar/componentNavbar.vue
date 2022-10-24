@@ -10,6 +10,8 @@
             <span class="bar3"></span>
           </div>
           <ul class="Header-blocNavigation">
+            <router-link to="/accueil">Accueil</router-link>
+            <router-link to="/about">Contact</router-link>
             <li><a>Accueil</a></li>
             <li><a>Prestations</a></li>
             <li class="Header-instagramButton"> <a href="https://www.instagram.com/beauty.ms_95/?hl=fr" target="_blank"><img src="../../assets/instagram1.png"  alt="Logo instagram"/></a></li>
@@ -20,20 +22,21 @@
   
   <script>
 
+
   export default {
-    name: 'navBar',
+    name: "navBar",
     data() {
-      return {
-        displayNav: false,
-        isInputFocused: false,
-      };
+        return {
+            displayNav: false,
+            isInputFocused: false,
+        };
     },
     methods: {
-      displaynav() {
-        this.displayNav = !this.displayNav;
-      }
-    },
-  };
+        displaynav() {
+            this.displayNav = !this.displayNav;
+        }
+    }
+};
   </script>
   <style scoped>
 
