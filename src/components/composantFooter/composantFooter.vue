@@ -15,7 +15,7 @@
   margin-top:100px;
   color: rgba(187,34,179);
   background: rgb(192, 192, 192);
-  background: linear-gradient(180deg,rgb(192, 192, 192)  0%, rgba(187,34,179,0.8886905103838411) 90%);
+  background: linear-gradient(180deg,rgb(192, 192, 192)  0%, rgba(33, 28, 33, 0.889) 90%);
   text-align:center;
   font-family: 'Playfair Display', serif;
 }

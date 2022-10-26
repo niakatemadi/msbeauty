@@ -12,7 +12,10 @@
           <ul class="Header-blocNavigation">
             <li><router-link to="/">Accueil</router-link></li>
             <li>  <router-link to="/prestations">Prestations</router-link></li>
-            <li class="Header-instagramButton"> <a href="https://www.instagram.com/beauty.ms_95/?hl=fr" target="_blank"><img src="./assets/instagram1.png"  alt="Logo instagram"/></a></li>
+            <div class="Header-logo">
+                <li class="Header-instagramButton"> <a href="https://www.instagram.com/beauty.ms_95/?hl=fr" target="_blank"><img src="./assets/instagram1.png"  alt="Logo instagram"/></a></li>
+                <li class="Header-snapchatButton"> <a href="" target="_blank"><img src="./assets/snapchat.png"  alt="Logo snapchat"/></a></li>
+            </div>
           </ul>
         </nav>
       </header>
@@ -29,8 +32,6 @@
 
 <script>
 import { RouterView } from 'vue-router';
-
-
 
   export default {
     name: "navBar",
@@ -75,7 +76,13 @@ import { RouterView } from 'vue-router';
     width: 100%;
     border-bottom: 1px solid rgba(187, 34, 179,1);
 }
-
+.Header-logo {
+    display: flex;
+    flex-direction: row;
+}
+.Header-logo li {
+    margin : 5px;
+}
 .Header-title
 {
     font-size: 2.5em;
@@ -131,6 +138,11 @@ import { RouterView } from 'vue-router';
         display: block;
         position: relative;
         z-index: 30;
+    }
+    .Header-logo {
+    display: flex;
+    flex-direction: column;
+
     }
     .Header-toggleButton 
     {

@@ -9,12 +9,11 @@
             <span class="bar2"></span>
             <span class="bar3"></span>
           </div>
-          <ul class="Header-blocNavigation">
-            <router-link to="/accueil">Accueil</router-link>
-            <router-link to="/about">Contact</router-link>
-            <li><a>Accueil</a></li>
-            <li><a>Prestations</a></li>
+          <ul class="Header-blocNavigation">  
+            <li><router-link to="/accueil">Accueil</router-link></li>
+            <li><router-link to="/about">Contact</router-link></li>
             <li class="Header-instagramButton"> <a href="https://www.instagram.com/beauty.ms_95/?hl=fr" target="_blank"><img src="../../assets/instagram1.png"  alt="Logo instagram"/></a></li>
+            <li class="Header-snapchatButton"> <a href="" target="_blank"><img src="../../assets/snapchat.png"  alt="Logo snapchat"/></a></li>
           </ul>
         </nav>
       </header>

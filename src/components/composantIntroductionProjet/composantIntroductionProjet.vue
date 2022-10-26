@@ -1,15 +1,14 @@
 <template>
     <div class="SectionIntroductionProjet">
     <section class="SectionIntroductionProjet-presentation">
-    <p>Idéalement situé à Pierrelaye, juxtaposant le bar chicha lounge O'KLM<br/> 
-      l’institut BEAUTY MS vous invite à profiter d’une parenthèse de beauté<br/> 
+    <p>Idéalement situé à Pierrelaye
+      l’institut BEAUTY MS vous invite à profiter d’une parenthèse de beauté
       au sein d’un petit cocon de douceur.
     </p>
     <p>
       Nous nous ferons un véritable plaisir de vous recevoir et nous serons<br/>
-      aux petits soins pour vous proposez des soins de qualités avec<br/> des produits 
-      naturels et de révélez votre splendeur en vous offrant des soins dentaires 
-      et du visage adaptés aux besoins de votre peau !
+      aux petits soins pour vous proposez des services de qualités avec<br/> des produits 
+      naturels et de révélez votre splendeur en vous offrant des soins adaptés à vos besoins !
     </p>
     <p>Qu’attendez-vous alors pour réserver des instants uniques de beauté chez Beauty MS !</p>
     </section>
@@ -35,11 +34,11 @@
   width : 600px;
   background-attachment: fixed;
   font-size: large;
-  background-color: rgb(192, 192, 192,0.7);
+  background-color: rgb(192, 192, 192,0.8);
   border-radius: 40px;
 }
 .SectionIntroductionProjet-presentation p {
-  color :rgba(187,34,179,1);
+  color :black;
   font-weight:bold;
   margin-top:50px;
   margin-right:7px;
